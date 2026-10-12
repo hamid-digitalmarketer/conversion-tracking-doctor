@@ -5,6 +5,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 [![Type checked: mypy](https://img.shields.io/badge/type%20checked-mypy-blue.svg)](http://mypy-lang.org/)
+[![Hire Me: Tracking Audits](https://img.shields.io/badge/Hire%20Me-Tracking%20%26%20CAPI%20Audits-2ea44f?style=flat-square&logo=googlechrome&logoColor=white)](https://abouthamid.web.app/)
+[![Connect on LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad%20Hamid-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammad-hamid-digital-marketing/)
+[![Direct Email](https://img.shields.io/badge/Email-mhamidlad%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white)](mailto:mhamidlad@gmail.com)
 
 > **Diagnostic and audit engine for web conversion tracking (Google Analytics 4, Meta Conversions API, Google Ads Enhanced Conversions).**  
 > Detects event duplicate firing, unhashed PII privacy leaks in URL query strings, broken Enhanced Conversions hashing, currency/value anomalies, and iOS/ad-blocker signal loss. Automatically exports ready-to-deploy **Google Tag Manager** custom JavaScript deduplication variables and **Meta CAPI** server remediation payloads.
@@ -212,7 +215,41 @@ This project is licensed under the [MIT License](LICENSE) - see the LICENSE file
 
 ---
 
-## 👤 Author & Support
+## 💼 Done-For-You Conversion Tracking & Server-Side CAPI Implementation
+
+> **Stop losing 20% to 40% of your conversion data to iOS 14.5, Safari ITP, and ad blockers.** Broken tracking inflates reported CPAs, starves Meta/Google smart bidding algorithms, and leaks unhashed customer PII.
+
+With **7+ years leading technical digital marketing & analytics infrastructure**, I help brands and agencies design robust, privacy-compliant tracking architectures that maximize smart bidding match rates and recover lost revenue attribution.
+
+### 🎯 Available Services & Engagement Tiers
+
+| Service Tier | Best For | What's Included | Typical Impact |
+|---|---|---|---|
+| **🔍 Forensic Tracking & Pixel Health Audit** | Brands spending \$15k–\$250k/mo | Full audit of GA4 event schema, Meta Pixel/CAPI deduplication, Google Ads Enhanced Conversions, and URL query PII scanning + remediation plan | Identifies duplicate purchase events and recovers missing 15–30% attribution |
+| **⚙️ Turnkey Server-Side GTM & CAPI Setup** | E-commerce (Shopify/WooCommerce) & SaaS | Full Server-Side Google Tag Manager (sGTM) on Google Cloud or Stape, Meta Conversions API Gateway, and 1st-party cookie recovery | Achieves **8.5+ Meta Event Quality Score**, bypasses browser ad-blockers |
+| **👑 Full Attribution & Marketing Analytics Retainer** | Scale-ups & high-volume media buyers | Continuous tag health monitoring, offline CRM conversion feedback (HubSpot/Salesforce), and multi-touch attribution reporting | Reliable ROAS reporting, automated alerting on tracking breaks |
+
+---
+
+### 🚀 Ready to Fix Your Tracking Infrastructure?
+
+Schedule a technical consultation with **Muhammad Hamid**:
+
+- 🌐 **Portfolio & Case Studies**: [abouthamid.web.app](https://abouthamid.web.app/)
+- 💼 **LinkedIn Profile**: [linkedin.com/in/muhammad-hamid-digital-marketing](https://www.linkedin.com/in/muhammad-hamid-digital-marketing/)
+- 📩 **Direct Business Email**: [`mhamidlad@gmail.com`](mailto:mhamidlad@gmail.com)
+- 📅 **Book a Technical Audit Session**: [Schedule Discovery Call](https://abouthamid.web.app/)
+
+<p align="center">
+  <a href="https://abouthamid.web.app/"><img src="https://img.shields.io/badge/Book%20Tracking%20Audit-abouthamid.web.app-2ea44f?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Book Audit"></a>
+  <a href="https://www.linkedin.com/in/muhammad-hamid-digital-marketing/"><img src="https://img.shields.io/badge/LinkedIn-Muhammad%20Hamid-0077b5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:mhamidlad@gmail.com"><img src="https://img.shields.io/badge/Email-mhamidlad%40gmail.com-red?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
+
+---
+
+## 👤 Author & Open Source Community
 
 Created and maintained by **Muhammad Hamid** ([@hamid-digitalmarketer](https://github.com/hamid-digitalmarketer)).  
 Submit an [issue](https://github.com/hamid-digitalmarketer/conversion-tracking-doctor/issues) or pull request to contribute new tracking checks!
+
