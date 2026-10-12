@@ -21,6 +21,7 @@ from conversion_tracking_doctor.analyzers import (
     PIILeakAnalyzer,
     ValueCurrencyAnalyzer,
 )
+from conversion_tracking_doctor.data.loader import load_client_events, load_server_events
 from conversion_tracking_doctor.exporters import CAPIRemediationExporter, GTMSnippetExporter
 from conversion_tracking_doctor.models import (
     DiagnosticFinding,
@@ -30,7 +31,6 @@ from conversion_tracking_doctor.models import (
 )
 from conversion_tracking_doctor.report import ReportGenerator
 from conversion_tracking_doctor.storage import SQLiteStorage
-from data.loader import load_client_events, load_server_events
 
 app = typer.Typer(
     name="conversion-doctor",
@@ -74,8 +74,9 @@ def audit(
         )
     )
 
-    base_dir = Path(__file__).resolve().parent.parent.parent
-    sample_dir = base_dir / "data" / "sample_data"
+    package_data_dir = Path(__file__).parent / "data" / "sample_data"
+    root_data_dir = Path(__file__).resolve().parent.parent.parent / "data" / "sample_data"
+    sample_dir = package_data_dir if package_data_dir.exists() else root_data_dir
 
     if client_events is None:
         client_events = sample_dir / "ga4_client_events.csv"

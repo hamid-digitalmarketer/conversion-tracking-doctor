@@ -40,3 +40,4 @@ reports/*.js
 .DS_Store
 Thumbs.db
 reports/*.py
+reports_ci/

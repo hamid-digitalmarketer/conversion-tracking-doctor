@@ -56,6 +56,9 @@ conversion-doctor = "conversion_tracking_doctor.cli:app"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+"*" = ["*.csv", "*.html", "*.js", "*.sql"]
+
 [tool.ruff]
 line-length = 100
 target-version = "py311"
