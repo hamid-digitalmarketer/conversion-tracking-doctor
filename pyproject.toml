@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conversion-tracking-doctor"
+version = "0.1.0"
+description = "Diagnostic and audit engine for web conversion tracking (GA4, Meta CAPI, Google Ads): detects event duplicates, unhashed PII leaks, broken Enhanced Conversions, currency anomalies, and ad-blocker drop-offs."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Muhammad Hamid", email = "hamid-digitalmarketer@users.noreply.github.com" }
+]
+keywords = [
+    "conversion-tracking",
+    "ga4",
+    "meta-capi",
+    "google-tag-manager",
+    "enhanced-conversions",
+    "pii-detection",
+    "ad-blocker-dropoff",
+    "event-match-quality",
+    "analytics-audit"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Topic :: Internet :: Log Analysis",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "pandas>=2.0.0",
+    "pydantic>=2.0.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "jinja2>=3.1.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.22.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+]
+
+[project.scripts]
+conversion-doctor = "conversion_tracking_doctor.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.11"
+ignore_missing_imports = true
+warn_unused_ignores = false
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "-v"
